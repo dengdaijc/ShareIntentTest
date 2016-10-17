@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ShareActivity">
+        <activity android:name=".ShareActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.SEND"/>
                 <category android:name="android.intent.category.DEFAULT"/>

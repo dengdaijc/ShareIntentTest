@@ -72,7 +72,7 @@ public class ShareIntentUtils {
     }
 
     /**
-     * 分享文本到全平台
+     * 分享文本到指定平台
      * @param context 上下文关系
      * @param text 要分享的文本
      * @param packageName 对应平台的包名
@@ -86,7 +86,7 @@ public class ShareIntentUtils {
     }
 
     /**
-     * 分享单张图片到全平台
+     * 分享单张图片到指定平台
      * @param context 上下文关系
      * @param text 文本内容，并非所有平台在分享图片时候都支持此参数
      * @param img 图片uri地址
@@ -102,7 +102,7 @@ public class ShareIntentUtils {
     }
 
     /**
-     * 分享多张图片到全平台
+     * 分享多张图片到指定平台
      * @param context 上下文关系
      * @param text 文本内容
      * @param images 图片Uri地址的集合
