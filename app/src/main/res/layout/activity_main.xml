@@ -53,4 +53,10 @@
         android:text="@string/share_single_imgs"
         android:id="@+id/btn_share_single_imgs"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/share_wechat_line"
+        android:id="@+id/btn_share_wechat_line"/>
+
 </LinearLayout>

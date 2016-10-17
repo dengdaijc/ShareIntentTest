@@ -60,6 +60,12 @@ public class MainActivity extends AppCompatActivity {
                 shareSingleImgs();
             }
         });
+        findViewById(R.id.btn_share_wechat_line).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                shareWechatLineImg();
+            }
+        });
 
         Spinner spinner = (Spinner) findViewById(R.id.spinner_platform);
         String[] platforms = {"微信", "QQ", "腾讯微博", "新浪微博"};
@@ -78,6 +84,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void shareWechatLineImg() {
+        ShareIntentUtils.shareToWechatLine(this, "test wechat line", Uri.fromFile(new File("/sdcard/test.png")));
     }
 
     private void shareSingleImgs() {

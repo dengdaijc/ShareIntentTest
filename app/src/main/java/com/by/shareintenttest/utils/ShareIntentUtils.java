@@ -1,5 +1,6 @@
 package com.by.shareintenttest.utils;
 
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -115,6 +116,23 @@ public class ShareIntentUtils {
         intent.setPackage(packageName);
         context.startActivity(Intent.createChooser(intent, "请选择"));
     }
+
+    /**
+     * 分享图文到微信朋友圈
+     * @param context 上下文关系
+     * @param text 文本内容
+     * @param img 图片uri地址
+     */
+    public static void shareToWechatLine(Context context, String text, Uri img) {
+        Intent intent=new Intent(Intent.ACTION_SEND);
+        intent.setType("image/*");
+        intent.putExtra(Intent.EXTRA_TEXT, text);
+        intent.putExtra(Intent.EXTRA_STREAM, img);
+        ComponentName comp = new ComponentName("com.tencent.mm", "com.tencent.mm.ui.tools.ShareToTimeLineUI");
+        intent.setComponent(comp);
+        context.startActivity(Intent.createChooser(intent, "请选择"));
+    }
+
 
 
 
