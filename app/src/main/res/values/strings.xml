@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ShareIntentTest</string>
+    <string name="share_all">分享文本到全平台</string>
+    <string name="share_single">分享文本到指定平台</string>
+    <string name="share_all_img">分享图片到全平台</string>
+    <string name="share_all_imgs">分享多张图片到全平台</string>
+    <string name="share_single_img">分享图片到指定平台</string>
+    <string name="share_single_imgs">分享多张图片到指定平台</string>
+</resources>
